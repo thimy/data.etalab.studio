@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  <h2>{{ this.title }}</h2>
+  <p>{{ this.description }}</p>
+
+  <h3>Fichiers</h3>
+  <dl>
+      {{ this.resources }}
+  </dl>
+  <h3>APIs</h3>
+  <dl>
+      {{ this.apis }}
+  </dl>
+{% endblock %}
