@@ -15,3 +15,9 @@ Included:
 pip install lektor
 lektor server
 ```
+
+Import some datasets from data.gouv.fr:
+
+```bash
+python scripts/import.py
+```
