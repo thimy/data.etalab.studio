@@ -19,12 +19,15 @@ def make_resources(resources):
 
 
 def create_dataset(data):
+    args = data.copy()
+    id = args.pop('id')
+    args['_model'] = 'dataset'
     r = requests.post('/'.join((LEKTOR_URL, 'newrecord')), json={
-        'id': data['id'],
-        'model': 'dataset',
-        'path': '/datasets/%s' % data['id']
+        'id': id,
+        'path': '/datasets',
+        'data': args
     })
-    print('create', r.status_code)
+    print('create', r.status_code, args)
     return r.json()
 
 

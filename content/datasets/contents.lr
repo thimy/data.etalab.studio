@@ -1,1 +1,3 @@
 _model: page
+---
+_template: datasets.html

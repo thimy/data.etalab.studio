@@ -1,0 +1,29 @@
+_model: dataset
+---
+description:
+
+Fichier de correspondance entre les codes communes (INSEE) et les codes postaux au format csv.
+
+Ce fichier comprend :
+- Le code commune INSEE
+- Le nom de la commune
+- Le code postal
+- Le libellé d’acheminement
+- La ligne 5 de l'adresse (précision de l'ancienne commune ou du lieu-dit)
+
+Il correspond aux codes postaux de France (métropole et DOM), ceux des TOM, ainsi que MONACO.
+
+**Note aux réutilisateurs**: les [contours géographiques des communes](https://www.data.gouv.fr/fr/datasets/geofla-r/), à partir de leurs codes INSEE, sont aussi disponibles sur [https://www.data.gouv.fr/fr/](https://www.data.gouv.fr/fr/).
+
+Vous découvrirez des formats de fichiers supplémentaires, des outils de visualisation et des API sur [https://datanova.legroupe.laposte.fr](https://datanova.legroupe.laposte.fr).
+---
+resources:
+
+#### resource ####
+url: https://datanova.legroupe.laposte.fr/explore/dataset/laposte_commnouv/download/?format=csv&timezone=Europe/Berlin&use_labels_for_header=true
+----
+description: Communes nouvelles
+---
+title: Base officielle des codes postaux
+---
+id: base-officielle-des-codes-postaux

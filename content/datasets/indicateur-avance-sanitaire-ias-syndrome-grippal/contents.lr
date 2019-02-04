@@ -1,0 +1,26 @@
+_model: dataset
+---
+description:
+
+L’objectif de  l’Indicateur Avancé Sanitaire (IAS®) "Syndrome Grippal" est de contribuer à la surveillance des syndromes grippaux  en France en apportant des informations complémentaires à celles du réseau Sentinelles.
+Cet indicateur a été validé par comparaison avec les données du réseau Sentinelles. Au niveau national, La corrélation croisée avec le réseau Sentinelle est forte (0,88). Cette corrélation valide la pertinence de l’IAS®.
+L’IAS® est calculé chaque jour en employant une méthode de lissage temporel : les informations des sept jours précédents et des 7 jours suivants sont prises en compte pour calculer la valeur d’un jour donné. Ceci fait que l’indice d’un jour J peut légèrement évoluer jusqu’à J+7.
+
+Données issues des sorties consommateurs des officines du réseau CELTIPHARM.
+
+Plus d'infos sur nos méthodes: http://ias.openhealth.fr/methode
+
+http://ias.openhealth.fr/
+
+Les données sont mises à jour quotidiennement. Adopter le J+1 !
+---
+resources:
+
+#### resource ####
+url: http://ias.openhealth.fr/Portals/1/download/grippe/Openhealth_S-Grippal.csv
+----
+description: IAS® national syndrome grippal
+---
+title: Indicateur Avancé Sanitaire IAS® - SYNDROME GRIPPAL
+---
+id: indicateur-avance-sanitaire-ias-syndrome-grippal

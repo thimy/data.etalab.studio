@@ -1,0 +1,29 @@
+_model: dataset
+---
+description:
+
+Liste des établissements du domaine sanitaire et social.
+
+
+Informations sur la Géo-localisation : Le système d’information source contenant les coordonnées géographiques permettant de géo-localiser les établissements
+répertoriés dans FINESS est le produit BD-ADRESSE en version 2.1 de l’IGN (Institut Géographique National).
+
+**ZONE                    SYSTÈME GEODESIQUE         ELLIPSOÏDE ASSOCIEE              PROJECTION **
+//France métropolitaine : RGF93                      IAG GRS 1980                     Coniques conformes 9 zones - Lambert 93 
+//Guadeloupe, Martinique: WGS84                      IAG GRS 1980                     UTM Nord fuseau 20 
+//Guyane                : RGFG95                     IAG GRS 1980                     UTM Nord fuseau 22 
+//Réunion               : RGR92                      IAG GRS 1980                     UTM Sud fuseau 40 
+//Mayotte               : RGM04                      IAG GRS 1980                     UTM Sud fuseau 38 
+FAQ : Pourquoi les colonnes n'apparaissent pas sur le fichier proposé ?
+Pour permettre l'utilisation d'automates, la structure du fichier s'affiche en format XSD. Pour retrouver les colonnes d'un format type tableur, il faut vous référer à la description du fichier disponible en format PDF.
+---
+resources:
+
+#### resource ####
+url: https://www.data.gouv.fr/s/resources/finess-extraction-du-fichier-des-etablissements/20180404-104958/etalab_cs1100502.pdf
+----
+description: Télécharger Description du jeu de données "établissements"
+---
+title: FINESS Extraction du Fichier des établissements
+---
+id: finess-extraction-du-fichier-des-etablissements

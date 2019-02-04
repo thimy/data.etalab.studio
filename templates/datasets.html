@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<h1>Datasets</h1>
+<ul>
+{% for dataset in this.children %}
+    <li><a href="{{ dataset|url }}">{{ dataset.title }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
