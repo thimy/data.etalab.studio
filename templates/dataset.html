@@ -1,15 +1,67 @@
 {% extends "layout.html" %}
+{% block styles %}
+    <link rel="stylesheet" href="{{ '/static/dataset.css'|url }}">
+{% endblock %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  <h2>{{ this.title }}</h2>
-  <p>{{ this.description }}</p>
+  <div class="hero" role="banner">
+    <div class="hero__container">
+      <h1>{{ this.title }}</h1>
+    </div>
+  </div>
+  <main role="main">
+    <section class="section section-grey">
+      <div class="container dataset-container">
+        <div class="main-content">
+          <h2>Description</h2>
+          <p>{{ this.description }}</p>
 
-  <h3>Fichiers</h3>
-  <dl>
-      {{ this.resources }}
-  </dl>
-  <h3>APIs</h3>
-  <dl>
-      {{ this.apis }}
-  </dl>
+          <h2>Fichiers</h2>
+          <dl>
+              {{ this.resources }}
+          </dl>
+          <h2>APIs</h2>
+          <dl>
+              {{ this.apis }}
+          </dl>
+        </div>
+        <div class="side-content">
+          <h4>Organisations liées au jeu de données</h4>
+          <dl>
+            <dt>Producteur</dt>
+            <dd>Base Adresse Nationale</dd>
+          </dl>
+          <dl>
+            <dt>Réutilisateur</dt>
+            <dd>Etalab</dd>
+          </dl>
+          <h4>Informations complémentaires</h4>
+          <dl>
+            <dt>Licence</dt>
+            <dd>Open Data Commons Open Database License (ODbL)</dd>
+          </dl>
+          <dl>
+            <dt>Fréquence de mise à jour</dt>
+            <dd>Hebdomadaire</dd>
+          </dl>
+          <dl>
+            <dt>Date de création</dt>
+            <dd>17 avril 2015 </dd>
+          </dl>
+          <dl>
+            <dt>Date de dernière modification</dt>
+            <dd>28 novembre 2018</dd>
+          </dl>
+          <dl>
+            <dt>Dernière mise à jour de ressource</dt>
+            <dd>7 juin 2018</dd>
+          </dl>
+          <dl>
+            <dt>Granularité de la couverture territoriale</dt>
+            <dd>Point d'intérêt</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
 {% endblock %}

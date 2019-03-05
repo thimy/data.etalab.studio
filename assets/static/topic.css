@@ -1,0 +1,59 @@
+.hero__container p {
+  line-height: 1.5em;
+}
+
+.hero__icon {
+  height: 1em;
+  vertical-align: middle;
+}
+
+.reuse__count {
+  margin-left: 2em;
+}
+
+.datasets .grid {
+  padding: 0;
+  margin-top: 1em;
+}
+
+.grid .dataset__panel {
+  width: 100%;
+}
+
+.reuses .row {
+  margin: 0 -1em;
+}
+
+.search_widget .panel__content {
+  height: auto;
+}
+
+.widget__search {
+  font-size: 14px;
+  padding: 1em;
+}
+
+.widget__search h3 {
+  margin: 0 0 1em;
+  font-size: 1.2em;
+}
+/* 
+.widget__content {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+} */
+/* 
+.widget__content p {
+  width: 100%;
+  margin: 0;
+}
+
+.widget__content .form__group {
+  width: 100%;
+  margin-left: 2em;
+}
+ */
+.reuses .row {
+  margin-top: 2em;
+}

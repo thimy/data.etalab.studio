@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  <div class="hero" role="banner">
+    <div class="hero__container">
+      <h1>Nos thèmes</h1>
+    </div>
+  </div>
+  <main role="main">
+    <section class="section section-grey">
+      <div class="container">
+        {{ this.body }}
+        <div class="highlight">
+          <a class="card" href="/dataset">
+            <div class="card__cover">
+              <img src="{{ '/static/images/template/shiba.jpg' }}" alt="Shiba Inu" />
+            </div>
+            <div class="card__content">
+              <img src="{{ '/static/images/icons/clipboard-notes.svg' }}" alt="Shiba Inu" />
+              <div>
+                <h3>Commande publique</h3>
+                <div class="card__meta">
+                  <div>120 jeux de données</div>
+                  <div>Dernière activité il y a <time>3 jours</time></div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid">
+          <a class="card" href="/dataset">
+            <div class="card__cover">
+              <img src="{{ '/static/images/template/shiba.jpg' }}" alt="Shiba Inu" />
+            </div>
+            <div class="card__content">
+              <img src="{{ '/static/images/icons/clipboard-notes.svg' }}" alt="Shiba Inu" />
+              <h3>Commande publique</h3>
+              <div class="card__meta">
+                <div>120 jeux de données</div>
+                <div>Dernière activité il y a <time>3 jours</time></div>
+              </div>
+            </div>
+          </a>
+          <a class="card">
+            <div class="card__cover">
+              <img src="{{ '/static/images/template/french.jpg' }}" alt="French Bulldog" />
+            </div>
+            <div class="card__content">
+              <img src="{{ '/static/images/icons/map.svg' }}" alt="Shiba Inu" />
+              <h3>Géographie</h3>
+              <div class="card__meta">
+                <div>120 jeux de données</div>
+                <div>Dernière activité il y a <time>3 jours</time></div>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="{{ 'topics/associations'|url }}">
+            <div class="card__cover">
+              <img src="{{ '/static/images/template/corgi.jpg' }}" alt="Corgi" />
+            </div>
+            <div class="card__content">
+              <img src="{{ '/static/images/icons/building.svg' }}" alt="Shiba Inu" />
+              <h3>Entreprises et associations</h3>
+              <div class="card__meta">
+                <div>120 jeux de données</div>
+                <div>Dernière activité il y a <time>3 jours</time></div>
+              </div>
+            </div>
+          </a>
+          <a class="card">
+            <div class="card__cover">
+              <img src="{{ '/static/images/template/shiba.jpg' }}" alt="Shiba Inu" />
+            </div>
+            <div class="card__content">
+              <img src="{{ '/static/images/icons/directions.svg' }}" alt="Shiba Inu" />
+              <h3>Transport</h3>
+              <div class="card__meta">
+                <div>120 jeux de données</div>
+                <div>Dernière activité il y a <time>3 jours</time></div>
+              </div>
+            </div>
+          </a>
+          <a class="card">
+            <div class="card__cover">
+              <img src="{{ '/static/images/template/french.jpg' }}" alt="French Bulldog" />
+            </div>
+            <div class="card__content">
+              <img src="{{ '/static/images/icons/car-sideview.svg' }}" alt="Shiba Inu" />
+              <h3>Infrastructures de recharge pour véhicules électriques</h3>
+              <div class="card__meta">
+                <div>120 jeux de données</div>
+                <div>Dernière activité il y a <time>3 jours</time></div>
+              </div>
+            </div>
+          </a>
+          <a class="card">
+            <div class="card__cover">
+              <img src="{{ '/static/images/template/corgi.jpg' }}" alt="Corgi" />
+            </div>
+            <div class="card__content">
+              <img src="{{ '/static/images/icons/trees.svg' }}" alt="Shiba Inu" />
+              <h3>Something something</h3>
+              <div class="card__meta">
+                <div>120 jeux de données</div>
+                <div>Dernière activité il y a <time>3 jours</time></div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="text-center">
+          <a class="button">Afficher plus de thèmes</a>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

@@ -1,0 +1,13 @@
+_model: topic
+---
+title: Associations
+---
+_template: topic.html
+---
+description:
+
+On compte à l’heure actuelle plus de 1,3 millions d’associations actives en France, on peut donc se réjouir d’avoir accès à un certains nombre de données les concernant. 
+---
+dataset_count: 29
+---
+reuse_count: 164

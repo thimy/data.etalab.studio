@@ -1,0 +1,261 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block styles %}
+  <link rel="stylesheet" href="{{ '/static/home.css'|url }}">
+{% endblock %}
+{% block body %}
+  <div class="hero home-hero" role="banner">
+    <div class="hero__container">
+      <h1>data.gouv.fr</h1>
+      <p>{{ this.tagline }}</p>
+      <!--div class="form__group">
+        <div class="input__group">
+          <input placeholder="Tapez un mot-clef : agriculture, économie, chèvres..." type="text" class="" value="" name="search" id="search">
+          <a class="button" aria-label="Recherche" href="{{ '/results'|url }}">
+            Rechercher
+          </a>
+        </div>
+      </div-->
+    </div>
+  </div>
+  <main role="main">
+    <section class="section section-color opendata">
+      <div class="container">
+        <div class="row">
+          <div class="opendata__desc">
+            {{ this.description }}
+          </div>
+          <div>
+            <div class="opendata__user">
+              <img src="{{ '/static/images/icons/truck-loading.svg'}}" />
+              <div class="opendata__user-desc">
+                <h3>{{ this.description_provider_title }}</h3>
+                <div>{{ this.description_provider }}</div>
+              </div>
+            </div>
+            <div class="opendata__user">
+              <img src="{{ '/static/images/icons/user.svg'}}" />
+              <div class="opendata__user-desc">
+                <h3>{{ this.description_user_title }}</h3>
+                <div>{{ this.description_user }}</div>
+              </div>
+            </div>
+            <div class="opendata__user">
+              <img src="{{ '/static/images/icons/analytics.svg'}}" />
+              <div class="opendata__user-desc">
+                <h3>{{ this.description_reuser_title }}</h3>
+                <div>{{ this.description_reuser }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-grey">
+      <div class="container">
+        <h2>Explorer les données</h2>
+        <p>Parmi les nombreux jeux de données existant sur la plateforme, nous avons identifié des grands thèmes qui ne demandent qu’un peu d’amour.</p>
+        <div class="highlight">
+          <a class="topic" href="{{ '/topics/associations'|url }}">
+            <img src="{{ '/static/images/icons/store.svg' }}" alt="Shiba Inu" />
+            <div>
+              <h3>Associations</h3>
+              <div class="topic__meta">
+                <div>120 jeux de données</div>
+                <div>Dernière activité il y a <time>3 jours</time></div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="grid">
+          <a class="topic" href="{{ '/topics/associations'|url }}">
+            <img src="{{ '/static/images/icons/clipboard-notes.svg' }}" alt="Shiba Inu" />
+            <h3>Commande publique</h3>
+            <div class="topic__meta">
+              <div>120 jeux de données</div>
+              <div>Dernière activité il y a <time>3 jours</time></div>
+            </div>
+          </a>
+          <a class="topic">
+            <img src="{{ '/static/images/icons/map.svg' }}" alt="Shiba Inu" />
+            <h3>Géographie</h3>
+            <div class="topic__meta">
+              <div>120 jeux de données</div>
+              <div>Dernière activité il y a <time>3 jours</time></div>
+            </div>
+          </a>
+          <a class="topic" href="{{ 'topics/associations'|url }}">
+            <img src="{{ '/static/images/icons/building.svg' }}" alt="Shiba Inu" />
+            <h3>Entreprises</h3>
+            <div class="topic__meta">
+              <div>120 jeux de données</div>
+              <div>Dernière activité il y a <time>3 jours</time></div>
+            </div>
+          </a>
+          <a class="topic" href="{{ '/topics/associations'|url }}">
+            <img src="{{ '/static/images/icons/car-sideview.svg' }}" alt="Shiba Inu" />
+            <h3>Transport</h3>
+            <div class="topic__meta">
+              <div>120 jeux de données</div>
+              <div>Dernière activité il y a <time>3 jours</time></div>
+            </div>
+          </a>
+          <a class="topic" href="{{ '/topics/associations'|url }}">
+            <img src="{{ '/static/images/icons/heart.svg' }}" alt="Shiba Inu" />
+            <h3>Santé</h3>
+            <div class="topic__meta">
+              <div>120 jeux de données</div>
+              <div>Dernière activité il y a <time>3 jours</time></div>
+            </div>
+          </a>
+          <a class="topic" href="{{ '/topics/associations'|url }}">
+            <img src="{{ '/static/images/icons/trees.svg' }}" alt="Shiba Inu" />
+            <h3>Écologie</h3>
+            <div class="topic__meta">
+              <div>120 jeux de données</div>
+              <div>Dernière activité il y a <time>3 jours</time></div>
+            </div>
+          </a>
+          <a class="topic" href="{{ '/topics/associations'|url }}">
+            <img src="{{ '/static/images/icons/map-pin-alt.svg' }}" alt="Shiba Inu" />
+            <h3>Adresse</h3>
+            <div class="topic__meta">
+              <div>120 jeux de données</div>
+              <div>Dernière activité il y a <time>3 jours</time></div>
+            </div>
+          </a>
+          <a class="topic" href="{{ '/topics/associations'|url }}">
+            <img src="{{ '/static/images/icons/line-chart.svg' }}" alt="Shiba Inu" />
+            <h3>Statistiques</h3>
+            <div class="topic__meta">
+              <div>120 jeux de données</div>
+              <div>Dernière activité il y a <time>3 jours</time></div>
+            </div>
+          </a>
+          <a class="topic" href="{{ '/topics/associations'|url }}">
+            <img src="{{ '/static/images/icons/envelope.svg' }}" alt="Shiba Inu" />
+            <h3>Élections</h3>
+            <div class="topic__meta">
+              <div>120 jeux de données</div>
+              <div>Dernière activité il y a <time>3 jours</time></div>
+            </div>
+          </a>
+          <a class="topic" href="{{ '/topics/associations'|url }}">
+            <img src="{{ '/static/images/icons/pen.svg' }}" alt="Shiba Inu" />
+            <h3>Éducation</h3>
+            <div class="topic__meta">
+              <div>120 jeux de données</div>
+              <div>Dernière activité il y a <time>3 jours</time></div>
+            </div>
+          </a>
+          <a class="topic" href="{{ '/topics/associations'|url }}">
+            <img src="{{ '/static/images/icons/book-alt.svg' }}" alt="Shiba Inu" />
+            <h3>Culture</h3>
+            <div class="topic__meta">
+              <div>120 jeux de données</div>
+              <div>Dernière activité il y a <time>3 jours</time></div>
+            </div>
+          </a>
+          <a class="topic" href="{{ '/topics/associations'|url }}">
+            <img src="{{ '/static/images/icons/euro-circle.svg' }}" alt="Shiba Inu" />
+            <h3>Finances</h3>
+            <div class="topic__meta">
+              <div>120 jeux de données</div>
+              <div>Dernière activité il y a <time>3 jours</time></div>
+            </div>
+          </a>
+        </div>
+        <!--div class="text-center">
+          <a class="button" href="{{ '/datasets'|url }}">Parcourir directement les jeux de données</a>
+          <a class="button">Me montrer un jeu de données aléatoire</a>
+        </div-->
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="reuses">
+          <h3>{{ this.data_usage_title }}</h3>
+          {{ this.data_usage_description }}
+          <div class="row">
+            <div class="card">
+              <div class="card__cover"></div>
+              <div class="card__content">
+                <h3>Réutilisation #1</h3>
+                <div class="card__meta">
+                  <time>2019</time>
+                  <span>Jean-Eudes</span>
+                </div>
+              </div>
+              <div class="card__extra">
+                <div class="label">vin</div>
+                <div class="label">baguette</div>
+                <div class="label">fromage</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__cover"></div>
+              <div class="card__content">
+                <h3>Je suis une autre réutilisation</h3>
+                <div class="card__meta">
+                  <time>2019</time>
+                  <span>Jean-Eudes</span>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__cover"></div>
+              <div class="card__content">
+                <h3>Pouetpouetpouet</h3>
+                <div class="card__meta">
+                  <time>2019</time>
+                  <span>Jean-Eudes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a class="button">Découvrir plus de réutilisations</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-grey">
+      <div class="container">
+        <div class="row">
+          <div class="blog">
+            <h2>Sur le blog de data.gouv.fr</h2>
+            <article class="article article__preview panel">
+              <div class="article__author">
+                <img src="{{ '/static/images/template/french.jpg' }}" alt="French Bulldog" />
+                <span class="article__author-name">French Bulldog</span>
+              </div>
+              <div class="article__author">
+                <img src="{{ '/static/images/template/corgi.jpg' }}" alt="Corgi" />
+                <span class="article__author-name">Corgi</span>
+              </div>
+              <a class="article__link" title="article title" href="#">
+                <h2 class="article__title">Wow, such stick.</h2>
+              </a>
+              <div class="article__meta">Paru le <time>12/02/2018</time>.</div>
+              <div class="article__thumbnail">
+                <img src="{{ '/static/images/template/shiba.jpg' }}" alt="Shiba Inu" />
+              </div>
+              <div class="richtext">
+                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+              </div>
+              <a class="article__more" href="#">Lire la suite…</a>
+            </article>
+          </div>
+          <div class="actu">
+            <h3>L’actualité de l’opendata</h3>
+            <ul>
+              <li>Un titre d’article, par NEXTinpact</li>
+              <li>Un autre article super intéressant, par Simon Chignard</li>
+              <li>Tout le monde parle d'opendata, par un mec qui s'y connait</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

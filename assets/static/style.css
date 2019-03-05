@@ -1,42 +1,126 @@
-body {
-    font-family: 'Verdana', sans-serif;
-    margin: 50px 25px;
+.navbar {
+  border: 0;
 }
 
-a {
-    color: #2a99b6;
+footer.footer {
+  background: #1c1c1c;
 }
 
-a:hover {
-    color: #33bbdf;
+.hero {
+  background: #fff;
+  padding-bottom: 3em;
 }
 
-header, footer, div.page {
-    width: 760px;
-    margin: 0 auto;
-    background: #daeef3;
-    padding: 20px 30px;
+.hero__container {
+  max-width: 1000px;
+  color: #1c1c1c;
+  margin: 0 auto;
 }
 
-header h1 {
-    color: #169bbd;
-    margin: 0;
-    font-weight: normal;
-    font-size: 42px;
+.hero__container .form__group {
+  margin-top: 1em;
+  width: 80%;
 }
 
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.container {
+  max-width: 1200px;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 8px 0 0;
-    padding: 0;
+.input__group {
+  display: flex;
 }
 
-div.page {
-    background: #f1fbfe;
+.input__group .button {
+  flex-shrink: 0;
+  margin-left: 1em;
 }
+
+.panel {
+  border: 0;
+  border-radius: 0;
+}
+
+hr {
+  border-top: 0;
+  margin: 2em 0;
+}
+
+.side-content {
+  margin-left: 3em;
+  flex: 0 0 25%;
+  font-size: 15px;
+}
+
+.side-content .form__group + .form__group {
+  margin-top: 1em;
+}
+
+.side-content dt {
+  display: block;
+  color: #53657d;
+}
+
+.side-content dd {
+  padding: 0;
+}
+
+/* Tabs */
+.section-tabbed {
+  background-color: #003b80;
+  margin: auto;
+
+}
+
+.tabs {
+}
+
+.tabs input[type="radio"] {
+  display:none ;
+}
+
+.tabs label {
+  color: #fff;
+  padding: 1em 2em;
+  text-decoration: none;
+  border-radius: 0;
+  cursor:pointer;
+  margin: 0;
+  display: inline-block;
+  transform: translateX(-100%);
+}
+
+.tabs label:hover {
+  background: #ccc;
+  color: #1c1c1c;
+}
+
+.tabs label:first-of-type {
+  margin-left: 50%;
+}
+
+.tabs input:checked + label{
+  background-color: #ebeff3;
+  color: #26353f;
+  cursor: default;
+}
+
+.tabs .tab {
+  display: none;
+  padding-top: 3em;
+}
+
+.tab .container {
+  flex-direction: column;
+}
+
+.tab-content {
+  background-color: #ebeff3;
+  padding-bottom: 5em;
+}
+
+.tabs input:nth-of-type(1):checked ~ .tab-content .tab:nth-of-type(1),
+.tabs input:nth-of-type(2):checked ~ .tab-content .tab:nth-of-type(2),
+.tabs input:nth-of-type(3):checked ~ .tab-content .tab:nth-of-type(3){ 
+  display: block;
+}
+

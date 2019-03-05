@@ -1,6 +1,46 @@
-title: Welcome to data.gouv.fr!
----
-body:
+_model:
 
-This is a basic demo website that shows how to use Lektor for a basic
-website with some pages.
+home
+
+---
+title:
+
+Bienvenue sur data.gouv.fr !
+
+---
+tagline:
+
+La plateforme ouverte des données publiques françaises
+
+---
+description:
+
+## Qu’est-ce que l’opendata ?
+L’ouverture des données (Open Data) vise à encourager la réutilisation des données au-delà de leur utilisation première par l’administration. En utilisant, directement ou via des applications, des données publiées sur la plateforme « data.gouv.fr », on peut par exemple :
+* répondre à des questions ;
+* prendre des décisions, pour soi, sa commune, son association ou son entreprise ;
+* bénéficier de services utiles au quotidien&nbsp;: pour se déplacer, éviter le gaspillage alimentaire, connaître les services publics à proximité de son domicile ;
+* encourager la transparence démocratique des institutions et des élus, par exemple&nbsp;: connaître l’utilisation de la réserve parlementaire, les budgets de l’État et des collectivités, les titres de presse aidés par l’État.
+
+Découvrez l’opendata plus en profondeur en consultant notre <a href="https://doc.data.gouv.fr">documentation</a>.
+
+---
+data_usage: Avoir accès à des données c’est bien, mais c’est encore mieux lorsqu’elles sont contextualisées. Voici quelques exemples de réutilisations réalisées à partir de données ouvertes.
+---
+_template: home.html
+---
+description_provider: En créant un compte sur la plate-forme, vous pouvez déposer vos données sous le format de votre choix afin d’en faire bénéficier la communauté.
+---
+description_reuser: Vous pouvez utiliser les données en accord avec leur licence de publication et publier les réutilisations sur la plateforme.
+---
+description_user: Vous pouvez consulter tous les jeux de données et contribuer en les commentant ou en signalant des problèmes, afin d’améliorer la qualité des données.
+---
+data_usage_description: Parmi les nombreux jeux de données existant sur la plateforme, nous avons identifié des grands thèmes qui ne demandent qu’un peu d’amour.
+---
+data_usage_title: Ce qu’on peut faire avec les données
+---
+description_provider_title: Producteur
+---
+description_reuser_title: Réutilisateur
+---
+description_user_title: Utilisateur

@@ -1,10 +1,100 @@
 {% extends "layout.html" %}
+{% block styles %}
+    <link rel="stylesheet" href="{{ '/static/datasets.css'|url }}">
+{% endblock %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-<h1>Datasets</h1>
-<ul>
-{% for dataset in this.children %}
-    <li><a href="{{ dataset|url }}">{{ dataset.title }}</a></li>
-{% endfor %}
-</ul>
+  <div class="hero" role="banner">
+    <div class="hero__container">
+      <h1>Jeux de données</h1>
+      <div class="form__group">
+        <div class="input__group">
+          <input placeholder="Tapez un mot-clef : agriculture, économie, chèvres..." type="text" class="" value="" name="search" id="search">
+          <a class="button" aria-label="Recherche" href="{{ '/results'|url }}">
+            Rechercher
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main role="main" class="datasets">
+    <section class="section section-grey">
+      <div class="container">
+        <div class="side-pane">
+          <div class="form__group">
+            <label for="select">Trier par</label>
+            <select id="select">
+              <option>Pertinence</option>
+              <option>Date de publication</option>
+              <option>Date de dernière modification</option>
+              <option>Date de dernière activité</option>
+              <option>Nombre de réutilisations</option>
+              <option>Nombre d’abonnés</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <fieldset>
+              <legend>Type de fichier</legend>
+              <div class="input__group">
+                <input type="checkbox" name="checkbox" id="filetype-json" value="json"><label for="filetype-json" class="label-inline">JSON</label>
+              </div>
+              <div class="input__group">
+                <input type="checkbox" name="checkbox" id="filetype-csv" value="csv"><label for="filetype-csv" class="label-inline">CSV</label>
+              </div>
+              <div class="input__group">
+                <input type="checkbox" name="checkbox" id="filetype-xml" value="xml"><label for="filetype-xml" class="label-inline">XML</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form__group">
+            <fieldset>
+              <legend>Réutilisations connues</legend>
+              <div class="input__group">
+                <input type="checkbox" name="checkbox" id="reuses-high" value="high"><label for="reuses-high" class="label-inline">Beaucoup de réutilisations</label>
+              </div>
+              <div class="input__group">
+                <input type="checkbox" name="checkbox" id="reuses-medium" value="medium"><label for="reuses-medium" class="label-inline">Assez réutilisé</label>
+              </div>
+              <div class="input__group">
+                <input type="checkbox" name="checkbox" id="reuses-low" value="low"><label for="reuses-low" class="label-inline">Peu de réutilisations</label>
+              </div>
+              <div class="input__group">
+                <input type="checkbox" name="checkbox" id="reuses-none" value="none"><label for="reuses-none" class="label-inline">Aucune</label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="main-pane">
+          <div class="datasets__results text-right"><strong>154</strong> résultats pour <strong>"Chèvres"</strong></div>
+          <ul>
+          {% for dataset in this.children %}
+            <li class="panel dataset__panel">
+              <div class="panel__content">
+                <a class="dataset__image" data-producer="Premier Ministre" />
+                  <img src="{{ '/static/images/producers/pm.png' }}" alt="Shiba Inu"/>
+                </a>
+                <a class="dataset__title" href="{{ dataset|url }}">
+                  <h3>{{ dataset.title }}</h3>
+                </a>
+              </div>
+              <div class="panel__extra">
+                <div class="dataset__info">
+                  <span class="dataset__count">
+                    <img src="{{ '/static/images/icons/resource.svg' }}" class="dataset__icon" /> 2 ressources
+                  </span>
+                  <span class="reuse__count">
+                    <img src="{{ '/static/images/icons/reuse.svg' }}" class="dataset__icon" /> 32 réutilisations
+                  </span>
+                  <span class="frequency">
+                    <img src="{{ '/static/images/icons/time.svg' }}" class="dataset__icon" /> Mise à jour annuelle
+                  </span>
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 {% endblock %}

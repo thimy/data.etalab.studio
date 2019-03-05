@@ -29,9 +29,9 @@ Pour toute demande de création, de modification ou de changement concernant vot
 resources:
 
 #### resource ####
-url: http://files.data.gouv.fr/sirene/sirene_2019032_E_Q.zip
+url: http://files.data.gouv.fr/sirene/sirene_2019042_E_Q.zip
 ----
-description: Sirene : mise à jour quotidienne du 01 février 2019
+description: Sirene : mise à jour quotidienne du 11 février 2019
 ---
 title: Base Sirene des entreprises et de leurs établissements (SIREN, SIRET)[fin le 30 avril 2019]
 ---

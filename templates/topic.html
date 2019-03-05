@@ -1,0 +1,190 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block styles %}
+  <link rel="stylesheet" href="{{ '/static/datasets.css'|url }}">
+  <link rel="stylesheet" href="{{ '/static/topic.css'|url }}">
+{% endblock %}
+{% block body %}
+  <div class="hero" role="banner">
+    <div class="hero__container">
+      <h1>Associations</h1>
+      {{ this.description }}
+      </div>
+    </div>
+  </div>
+  <main role="main" class="topic">
+    <section class="section-tabbed">
+      <div class="tabs">
+        <input type="radio" checked name="tab" id="datasets">
+        <label for="datasets">{{ this.dataset_count }} jeux de données</label>
+        <input type="radio" name="tab" id="reuses">
+        <label for="reuses">{{ this.reuse_count }} réutilisations</label>
+
+        <div class="tab-content">
+          <div class="datasets tab" id="datasets">
+            <div class="container">
+              <div class="grid highlight">
+                <div class="panel dataset__panel">
+                  <div class="widget__search">
+                    <h3>Rechercher sur entreprise.data.gouv.fr</h3>
+                    <div class="widget__content">
+                      <div class="form__group">
+                        <div class="input__group">
+                          <input placeholder="Tapez un mot-clef : agriculture, économie, chèvres..." type="text" class="" value="" name="search" id="search">
+                          <a class="button" aria-label="Recherche" href="{{ '/results'|url }}">
+                            Rechercher
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel dataset__panel">
+                  <div class="panel__content">
+                    <a class="dataset__image" data-producer="Ministère de l’intérieur" />
+                      <img src="{{ '/static/images/producers/mi.png' }}" alt="Shiba Inu"/>
+                    </a>
+                    <a class="dataset__title" href="{{ '/datasets/base-officielle-des-codes-postaux'|url }}">
+                      <h3>Répertoire National des Associations</h3>
+                    </a>
+                  </div>
+                  <div class="panel__extra">
+                    <div class="dataset__info">
+                      <span class="dataset__count">
+                        <img src="{{ '/static/images/icons/resource.svg' }}" class="hero__icon" /> 2 ressources
+                      </span>
+                      <span class="reuse__count">
+                        <img src="{{ '/static/images/icons/reuse.svg' }}" class="hero__icon" /> {{ this.reuse_count }} réutilisations
+                      </span>
+                    </div>
+                    <span class="frequency">
+                      <img src="{{ '/static/images/icons/time.svg' }}" class="dataset__icon" /> Mise à jour annuelle
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <ul class="grid">
+                <li class="panel dataset__panel">
+                  <div class="panel__content">
+                    <a class="dataset__image" data-producer="Premier Ministre" />
+                      <img src="{{ '/static/images/producers/pm.png' }}" alt="Shiba Inu"/>
+                    </a>
+                    <a class="dataset__title" href="{{ '/datasets/base-officielle-des-codes-postaux'|url }}">
+                      <h3>Associations</h3>
+                    </a>
+                  </div>
+                  <div class="panel__extra">
+                    <div class="dataset__info">
+                      <span class="dataset__count">
+                        <img src="{{ '/static/images/icons/resource.svg' }}" class="hero__icon" /> 2 ressources
+                      </span>
+                      <span class="reuse__count">
+                        <img src="{{ '/static/images/icons/reuse.svg' }}" class="hero__icon" /> {{ this.reuse_count }} réutilisations
+                      </span>
+                      <span class="frequency">
+                        <img src="{{ '/static/images/icons/time.svg' }}" class="dataset__icon" /> Mise à jour annuelle
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel dataset__panel">
+                  <div class="panel__content">
+                    <a class="dataset__image" data-producer="Ministère de l’intérieur" />
+                      <img src="{{ '/static/images/producers/mi.png' }}" alt="Shiba Inu"/>
+                    </a>
+                    <a class="dataset__title" href="{{ '/datasets/base-officielle-des-codes-postaux'|url }}">
+                      <h3>Associations Reconnues d'Utilité Publique</h3>
+                    </a>
+                  </div>
+                  <div class="panel__extra">
+                    <div class="dataset__info">
+                      <span class="dataset__count">
+                        <img src="{{ '/static/images/icons/resource.svg' }}" class="hero__icon" /> 2 ressources
+                      </span>
+                      <span class="reuse__count">
+                        <img src="{{ '/static/images/icons/reuse.svg' }}" class="hero__icon" /> {{ this.reuse_count }} réutilisations
+                      </span>
+                      <span class="frequency">
+                        <img src="{{ '/static/images/icons/time.svg' }}" class="dataset__icon" /> Mise à jour annuelle
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="panel dataset__panel">
+                  <div class="panel__content">
+                    <a class="dataset__image" data-producer="Ministère de l’économie et des finances" />
+                      <img src="{{ '/static/images/producers/mef.png' }}" alt="Shiba Inu"/>
+                    </a>
+                    <a class="dataset__title" href="{{ '/datasets/base-officielle-des-codes-postaux'|url }}">
+                      <h3>PLF - Jaune - Associations subventionnées</h3>
+                    </a>
+                  </div>
+                  <div class="panel__extra">
+                    <div class="dataset__info">
+                      <span class="dataset__count">
+                        <img src="{{ '/static/images/icons/resource.svg' }}" class="hero__icon" /> 2 ressources
+                      </span>
+                      <span class="reuse__count">
+                        <img src="{{ '/static/images/icons/reuse.svg' }}" class="hero__icon" /> {{ this.reuse_count }} réutilisations
+                      </span>
+                      <span class="frequency">
+                        <img src="{{ '/static/images/icons/time.svg' }}" class="dataset__icon" /> Mise à jour annuelle
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="reuses tab" id="reuses">
+            <div class="container">
+              <div class="row">
+                <div class="card">
+                  <div class="card__cover">
+                    <img src="{{ '/static/images/template/shiba.jpg' }}" alt="Shiba Inu" />
+                  </div>
+                  <div class="card__content">
+                    <h3>Réutilisation #1</h3>
+                    <div class="card__meta">
+                      <time>2019</time>
+                      <span>Jean-Eudes</span>
+                    </div>
+                  </div>
+                  <div class="card__extra">
+                    <div class="label">vin</div>
+                    <div class="label">baguette</div>
+                    <div class="label">fromage</div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__cover">
+                    <img src="{{ '/static/images/template/corgi.jpg' }}" alt="Corgi" />
+                  </div>
+                  <div class="card__content">
+                    <h3>Je suis une autre réutilisation</h3>
+                    <div class="card__meta">
+                      <time>2019</time>
+                      <span>Jean-Eudes</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__cover">
+                    <img src="{{ '/static/images/template/french.jpg' }}" alt="French Bulldog" />
+                  </div>
+                  <div class="card__content">
+                    <h3>Pouetpouetpouet</h3>
+                    <div class="card__meta">
+                      <time>2019</time>
+                      <span>Jean-Eudes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

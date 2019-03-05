@@ -1,0 +1,14 @@
+
+/* dataset page */
+#dataset-hero {
+  padding: 1em;
+}
+
+#dataset-hero .hero__container {
+  min-height: 3em;
+}
+
+.dataset-container {
+  display: flex;
+  flex-direction: row;
+}

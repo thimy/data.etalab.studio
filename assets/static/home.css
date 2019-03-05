@@ -1,0 +1,122 @@
+.home-hero {
+  background: #fff url('images/banners/wave.svg') center bottom no-repeat; 
+  background-size: cover;
+  padding-bottom: 5em;
+}
+
+.home-hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.description {
+  margin: -9em 0 -5em;
+}
+
+.opendata .row > div {
+  width: 50%;
+}
+
+.opendata__desc {
+  margin-right: 3em;
+}
+
+.opendata__desc h2 {
+  margin-top: 0;
+}
+
+.opendata__user {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.opendata__user + .opendata__user {
+  margin-top: 2em;
+}
+
+.opendata__user img {
+  height: 40px;
+  margin-right: 1em;
+}
+
+.opendata__user h3 {
+  margin: 0;
+}
+
+.grid .topic {
+  transition: all ease-in-out 0.1s;
+}
+
+a.topic {
+  color: #1c1c1c;
+  text-decoration: none;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 0;
+}
+
+.highlight .topic {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.highlight .topic:hover {
+  transform: scale(1.01);
+}
+
+.grid .topic:hover {
+  transform: scale(1.03);
+  z-index: 2;
+}
+
+.highlight .topic h3,
+.highlight .topic .topic__meta,
+.grid .topic h3,
+.grid .topic .topic__meta {
+  text-align: center;
+}
+
+.highlight .topic time::after,
+.grid .topic time::after {
+  content: none;
+}
+
+.grid .topic img {
+  max-height: 50px;
+}
+
+.highlight .topic img {
+  max-height: 120px;
+}
+
+.reuses .row {
+  margin: 0 -1em;
+}
+
+.text-center .button {
+  margin-top: 1em;
+}
+
+.topic h3 {
+  line-height: 1.2em;
+  margin: 0.5em 0;
+}
+
+.grid {
+  margin: 1em 0 3em;
+}
+
+.card__cover {
+  background: rgb(0, 83, 179);
+}
+
+.actu {
+  flex: 0 0 30%;
+  margin-left: 3em;
+}
