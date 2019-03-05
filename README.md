@@ -1,4 +1,4 @@
-# ⧊ Reboot our favorite website
+# ⧊
 
 This a [Lektor](https://www.getlektor.com/docs/) proof of concept for on open data static portal.
 
