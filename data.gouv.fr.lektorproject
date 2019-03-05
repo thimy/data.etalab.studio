@@ -1,2 +1,8 @@
 [project]
 name = data.gouv.fr
+
+[servers.studio]
+name = studio
+enabled = yes
+default = yes
+target = rsync://root@data.etalab.studio/root/data.etalab.studio/build
