@@ -25,6 +25,7 @@ jobs:
           name: build and deploy
           command: |
             . venv/bin/activate
+            ssh-keyscan -H data.etalab.studio >> ~/.ssh/known_hosts
             lektor build && lektor deploy studio
     branches:
       only:
