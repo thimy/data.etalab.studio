@@ -15,10 +15,8 @@
 
       <nav>
         <ul class="nav__links">
-          <li class="nav__item{% if this._path == '/' %} active{% endif
-          %}"><a href="{{ '/'|url }}">Welcome</a></li>
         {% for href, title in [
-          ['/projects', 'Projects'],
+          ['/datasets', 'Datasets'],
           ['/about', 'About']
         ] %}
           <li class="nav__item{% if this.is_child_of(href) %} active{% endif

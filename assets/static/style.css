@@ -46,7 +46,7 @@ hr {
 }
 
 .side-content {
-  margin-left: 3em;
+  margin-left: 2em;
   flex: 0 0 25%;
   font-size: 15px;
 }
@@ -55,13 +55,20 @@ hr {
   margin-top: 1em;
 }
 
-.side-content dt {
+dt {
   display: block;
   color: #53657d;
+  margin-bottom: 0.25em;
 }
 
-.side-content dd {
+dd {
   padding: 0;
+  margin: 0;
+}
+
+dt,
+dd {
+  line-height: 1.25em;
 }
 
 /* Tabs */

@@ -11,55 +11,41 @@
   </div>
   <main role="main">
     <section class="section section-grey">
-      <div class="container dataset-container">
-        <div class="main-content">
-          <h2>Description</h2>
-          <p>{{ this.description }}</p>
-
-          <h2>Fichiers</h2>
+      <div class="container">
+        <div class="dataset__header">
           <dl>
-              {{ this.resources }}
-          </dl>
-          <h2>APIs</h2>
-          <dl>
-              {{ this.apis }}
-          </dl>
-        </div>
-        <div class="side-content">
-          <h4>Organisations liées au jeu de données</h4>
-          <dl>
-            <dt>Producteur</dt>
-            <dd>Base Adresse Nationale</dd>
-          </dl>
-          <dl>
-            <dt>Réutilisateur</dt>
+            <dt>Organisations</dt>
+            <dd>Base adresse nationale</dd>
             <dd>Etalab</dd>
           </dl>
-          <h4>Informations complémentaires</h4>
+          <dl>
+            <dt>Date de dernière mise à jour</dt>
+            <dd>5 janvier 2019</dd>
+          </dl>
           <dl>
             <dt>Licence</dt>
             <dd>Open Data Commons Open Database License (ODbL)</dd>
           </dl>
-          <dl>
-            <dt>Fréquence de mise à jour</dt>
-            <dd>Hebdomadaire</dd>
-          </dl>
-          <dl>
-            <dt>Date de création</dt>
-            <dd>17 avril 2015 </dd>
-          </dl>
-          <dl>
-            <dt>Date de dernière modification</dt>
-            <dd>28 novembre 2018</dd>
-          </dl>
-          <dl>
-            <dt>Dernière mise à jour de ressource</dt>
-            <dd>7 juin 2018</dd>
-          </dl>
-          <dl>
-            <dt>Granularité de la couverture territoriale</dt>
-            <dd>Point d'intérêt</dd>
-          </dl>
+        </div>
+      </div>
+      <div class="container dataset-container">
+        <div class="main-content">
+          <div class="panel">
+            <h2>Description</h2>
+            <p>{{ this.description }}</p>
+          </div>
+          <div class="panel">
+            <h2>Fichiers</h2>
+            <dl>
+              {{ this.resources }}
+            </dl>
+          </div>
+          <div class="panel">
+            <h2>APIs</h2>
+            <dl>
+              {{ this.apis }}
+            </dl>
+          </div>
         </div>
       </div>
     </section>

@@ -12,3 +12,26 @@
   display: flex;
   flex-direction: row;
 }
+
+.dataset-container h2,
+.dataset-container h3
+.dataset-container h4 {
+  border-bottom: 1px solid #ebeff3;
+  padding-bottom: 0.5em;
+}
+
+.dataset__header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+  justify-content: flex-start;
+}
+
+.dataset__header dl {
+  margin: 0;
+}
+
+.dataset__header dl + dl {
+  margin-left: 2em;
+}
+
