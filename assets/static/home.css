@@ -1,47 +1,14 @@
-.home-hero {
-  background: #fff url('images/banners/wave.svg') center bottom no-repeat; 
-  background-size: cover;
-  padding-bottom: 5em;
+.edito {
+  padding: 2em 0;
 }
 
-.home-hero h1 {
-  font-size: 3em;
+.recipe ul {
   margin: 0;
 }
 
-.description {
-  margin: -9em 0 -5em;
-}
-
-.opendata .row > div {
-  width: 50%;
-}
-
-.opendata__desc {
-  margin-right: 3em;
-}
-
-.opendata__desc h2 {
-  margin-top: 0;
-}
-
-.opendata__user {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-}
-
-.opendata__user + .opendata__user {
-  margin-top: 2em;
-}
-
-.opendata__user img {
-  height: 40px;
-  margin-right: 1em;
-}
-
-.opendata__user h3 {
-  margin: 0;
+.recipe .panel,
+.recipe a {
+  color: #1c1c1c;
 }
 
 .grid .topic {
@@ -51,7 +18,7 @@
 a.topic {
   color: #1c1c1c;
   text-decoration: none;
-  background-color: #fff;
+  background-color: #ebeff3;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -95,12 +62,54 @@ a.topic {
   max-height: 120px;
 }
 
-.reuses .row {
+.playlists .row {
   margin: 0 -1em;
 }
 
+.playlists .card__cover {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.playlists .card__cover h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.playlists .card__cover a {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.playlists .card__cover a:hover {
+  background: none;
+}
+
+.playlists .card__content {
+  padding: 0;
+  height: 228px;
+  overflow-y: scroll;
+  background-color: #ebeff3;
+}
+
+.playlists .card ul {
+  margin: 0;
+  padding: 0;
+}
+
+.playlists .card li {
+  padding: 1em;
+  border-top: 1px solid #ebeff3;
+  background: #fff;
+}
+
 .text-center .button {
-  margin-top: 1em;
+  margin-top: 3em;
 }
 
 .topic h3 {
@@ -110,6 +119,7 @@ a.topic {
 
 .grid {
   margin: 1em 0 3em;
+  padding: 0;
 }
 
 .card__cover {
@@ -119,4 +129,13 @@ a.topic {
 .actu {
   flex: 0 0 30%;
   margin-left: 3em;
+}
+
+.grid .dataset__panel {
+  width: 100%;
+}
+
+.dataset__icon {
+  height: 1em;
+  vertical-align: middle;
 }
